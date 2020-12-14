@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Profile"
+    android:orientation="horizontal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="633dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="297dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/profile_username"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="128dp"
+            android:layout_height="141dp"
+            android:layout_below="@+id/profile_username"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email_text" />
+
+        <Button
+            android:id="@+id/profile_edit_profile_image"
+            android:layout_width="129dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/profile_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_toStartOf="@+id/profile_completed_games"
+            android:background="@color/colorAccent"
+            android:text="@string/profile_edit_photo_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/profile_total_games"
+            android:layout_width="230dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/profile_username"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="55dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:gravity="center"
+            android:text="@string/profile_total_games"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <TextView
+            android:id="@+id/profile_completed_games"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_total_games"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:gravity="center"
+            android:text="@string/profile_completed"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/profile_total_games" />
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_completed_games"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/profile_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/profile_email_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="11dp"
+            android:text="@string/pref_email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/profile_email_text"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <Button
+            android:id="@+id/profile_delete_all_button"
+            android:layout_width="136dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/profile_delete_all_data_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <Button
+            android:id="@+id/profile_wipe_all_data"
+            android:layout_width="112dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/wipe_all_data"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_delete_all_button"
+            android:focusable="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:elevation="0dp"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+
+</RelativeLayout>
+

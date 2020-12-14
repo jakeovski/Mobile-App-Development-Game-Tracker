@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="316dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp">
+
+            <ImageView
+                android:id="@+id/library_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/library_game_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/library_game_name"
+                tools:srcCompat="@drawable/witcher" />
+
+            <TextView
+                android:id="@+id/library_game_name"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/library_game_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/library_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/library_remove_hour"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@color/colorAccent"
+                android:text="@string/library_remove_hour"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="@+id/library_edit_button"
+                app:layout_constraintTop_toBottomOf="@+id/library_edit_button"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/library_add_hour"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="@color/colorAccent"
+                android:text="@string/library_add_hour"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="@+id/library_edit_button"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/library_remove_hour"
+                app:layout_constraintTop_toBottomOf="@+id/library_edit_button"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/library_remove_button"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorAccent"
+                android:text="@string/remove_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/library_completed_button" />
+
+            <TextView
+                android:id="@+id/library_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/library_in_progress"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/library_image"
+                app:layout_constraintStart_toStartOf="@+id/library_image"
+                app:layout_constraintTop_toBottomOf="@+id/library_image" />
+
+            <Button
+                android:id="@+id/library_completed_button"
+                android:layout_width="121dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:background="@color/colorAccent"
+                android:text="@string/library_completed_button"
+                app:layout_constraintStart_toStartOf="@+id/library_image"
+                app:layout_constraintTop_toBottomOf="@+id/library_progress"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/library_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/library_completed_button" />
+
+            <TextView
+                android:id="@+id/library_hours"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/library_hours"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/library_game_name" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/library_total_hours"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/library_hours"
+                app:layout_constraintTop_toBottomOf="@+id/library_game_name" />
+
+            <Button
+                android:id="@+id/library_edit_button"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
+                android:background="@color/colorAccent"
+                android:text="@string/library_edit"
+                app:layout_constraintBottom_toTopOf="@+id/library_remove_button"
+                app:layout_constraintEnd_toEndOf="@+id/library_remove_button"
+                app:layout_constraintTop_toBottomOf="@+id/library_game_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

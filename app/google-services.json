@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "996548585091",
+    "project_id": "coursework-ae96a",
+    "storage_bucket": "coursework-ae96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996548585091:android:5db05966e7f9e1e5cc5db6",
+        "android_client_info": {
+          "package_name": "com.example.coursework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996548585091-svmtbi6b4m8nmu9l9he409jokpnshro4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0rkn3uKYKmErX6DbT8lsYpXsN6YyDR2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996548585091-svmtbi6b4m8nmu9l9he409jokpnshro4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

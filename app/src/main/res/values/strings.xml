@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+
+
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="welcome">"Welcome !"</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_register">Register</string>
+
+
+    <string name="add_button">Add</string>
+    <string name="edit_button">Edit</string>
+    <string name="game_hours">30/150 hr</string>
+    <string name="remove_button">Remove</string>
+
+
+    <string name="minimum_password">Password is less than 8 symbols</string>
+    <string name="auth_failed">Authentication Failed</string>
+
+    <string name="pref_username">Username</string>
+    <string name="shared_pref_file_name">com.example.coursework.gametracker</string>
+    <string name="pref_email">Email</string>
+
+
+    <string name="wipe_all_data">Wipe all data</string>
+
+    <string name="search_game_title">Title</string>
+    <string name="search_game_desc">Description</string>
+    <string name="search_add">Add</string>
+    <string name="search_game_image">Game Image</string>
+
+    <string name="profile_email_text">Email:</string>
+    <string name="profile_edit_photo_button">Edit Photo</string>
+    <string name="profile_delete_all_data_button">Delete User Data</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_upload">Upload</string>
+    <string name="profile_total_games">Total Games: </string>
+    <string name="profile_completed">Completed: </string>
+    <string name="profile_change_pass">Change Password</string>
+    <string name="profile_logout">Logout</string>
+    <string name="profile_image">Profile Image</string>
+
+    <string name="register_password">Password</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="register_already_have_account"><u>Already have an account?</u></string>
+    <string name="register_register_button">Register</string>
+
+    <string name="library_title">Games</string>
+    <string name="library_completed_button">Set Completed</string>
+    <string name="library_game_title">Title</string>
+    <string name="library_in_progress">In Progress</string>
+    <string name="library_completed">Completed!</string>
+    <string name = "library_button_uncompleted">Set Uncompleted</string>
+    <string name="library_game_image">Game Image</string>
+    <string name="library_hours">50</string>
+    <string name="library_edit">Edit manually</string>
+    <string name="library_add_hour">+Hour</string>
+    <string name="library_remove_hour">-Hour</string>
+    <string name="library_total_hours">Total Hours:</string>
+
+</resources>
