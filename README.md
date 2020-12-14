@@ -12,4 +12,7 @@ Various Features of the App:
  - Fireabase Authentication is used for Login/Register system
  - User can edit his profile picture
 
-![alt text]()
+# Game Library View
+---
+
+![alt text](Снимок.PNG)
