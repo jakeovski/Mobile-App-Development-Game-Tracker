@@ -1,5 +1,6 @@
 # Mobile-App-Development-Game-Tracker
 ---
+
 ## Third Year Mobile App Development Courserwork
 This is a game tracking application made in Android Studio which is using **IMDB API**
 
